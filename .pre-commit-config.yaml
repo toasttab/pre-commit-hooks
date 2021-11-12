@@ -8,6 +8,6 @@ repos:
       - id: trailing-whitespace
       - id: check-shebang-scripts-are-executable
   - repo: git://github.com/kenpetti-toasttab/pre-commit-hooks
-    rev: 6d24593c6a9cca83ca64c6bff2cddbe55fd3497d
+    rev: e4cec4509c00bbf23d3c97177dfa0b50e7e04abf
     hooks:
       - id: shellcheck

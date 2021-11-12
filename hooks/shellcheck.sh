@@ -39,9 +39,7 @@ for FILE in $files; do
 	SHEBANG_REGEX='^#!\(/\|/.*/\|/.* \)\(\(ba\|da\|k\|a\)*sh\|bats\)$'
 	if (head -1 "$FILE" | grep "$SHEBANG_REGEX" >/dev/null); then
 		shellcheck ${enable_list:+ --enable="$enable_list"} "$FILE"
-		if $? -gt 0 ; then
-			exit_status=1
-		fi
+		exit_status=$?
 	elif [[ "$FILE" =~ .+\.(sh|bash|dash|ksh|ash|bats)$ ]]; then
 		echo "$FILE: missing shebang"
 		exit_status=1
