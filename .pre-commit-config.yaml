@@ -7,8 +7,7 @@ repos:
       - id: end-of-file-fixer
       - id: trailing-whitespace
       - id: check-shebang-scripts-are-executable
-      - id: check-executables-have-shebangs
-  - repo: ./
-    rev: fc16972439d4c79739c9439f39f7f5305c22eede
+  - repo: git://github.com/kenpetti-toasttab/pre-commit-hooks
+    rev: main
     hooks:
       - id: shellcheck
