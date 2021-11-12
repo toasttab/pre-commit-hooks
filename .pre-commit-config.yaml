@@ -6,7 +6,9 @@ repos:
       - id: check-yaml
       - id: end-of-file-fixer
       - id: trailing-whitespace
+      - id: check-shebang-scripts-are-executable
+      - id: check-executables-have-shebangs
   - repo: ./
-    rev: main
+    rev: fc16972439d4c79739c9439f39f7f5305c22eede
     hooks:
       - id: shellcheck
