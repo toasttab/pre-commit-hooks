@@ -1,4 +1,5 @@
-# Go checks
+# Golang
+
 - id: go-fmt
   name: "go fmt"
   entry: hooks/go/run-go-fmt.sh
@@ -35,14 +36,12 @@
   description: "Runs `gocyclo`, requires https://github.com/fzipp/gocyclo"
   args: [-over=15]
 
-- id: "no-go-testing"
+- id: no-go-testing
   name: "Check files aren't using go's testing package"
   entry: 'testing\.T'
   files: 'test_.*\.go$'
   language: "pygrep"
-  description: >
-    Checks that no files are using `testing.T`, if you want developers to use
-    a different testing framework
+  description: "Checks that no files are using `testing.T`, if you want developers to use a different testing framework"
 
 - id: golangci-lint
   name: "golangci-lint"
@@ -94,7 +93,8 @@
   language: "script"
   description: "Runs `go mod vendor`, requires golang"
 
-# Shell hooks
+# Shell
+
 - id: shellcheck
   name: Shellcheck Bash Linter
   entry: hooks/sh/shellcheck.sh
