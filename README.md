@@ -4,7 +4,13 @@ This repo defines pre-commit hooks for use with the [pre-commit](https://pre-com
 
 ## Installation
 
-Refer to the [pre-commit](https://pre-commit.com/index.html#install) docs for installation instructions.
+For installation on Macs, run:
+
+```shell
+brew install pre-commit
+```
+
+For other systems, refer to the [pre-commit](https://pre-commit.com/index.html#install) docs for installation instructions.
 
 ## Usage
 
